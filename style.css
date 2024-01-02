@@ -13,6 +13,10 @@ body{
     background-color: white;
 }
 
+main {
+    padding-top: 82px;
+}
+
 .navigation{
     display: flex;
     align-items: center;
@@ -68,7 +72,6 @@ body{
 }
 .home{
     width: 100%;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -102,9 +105,11 @@ body{
     background-color: rgb(198, 0, 0);
 }
 .home-img{
+    width: 500px;
+}
+.home-img img {
     width: 100%;
 }
-
 
 @media (max-width:785px){
     .navigation{
@@ -159,9 +164,10 @@ body{
     .home p{
         font-size: 15px;
     }
-    .home img{
-        width: 125%;
-    }
 }
 
-
+@media (max-width: 400px) {
+    .home-img {
+        width: 300px;
+    }
+}
